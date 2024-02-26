@@ -11,6 +11,7 @@ protected:
 
 public: 
 	Person(string n, int a) : name(n), age(a) {}
+
 	void display() 
 	{ 
 		cout << "Name: " << name << ", Age: " << age << endl; 
@@ -28,7 +29,7 @@ public:
 
 	void display() 
 	{
-		  Person::display(); 
+		  Person::display();
 		  // Вызов метода display базового класса 
 		  cout << "Student ID: " << studentID << endl; 
 	} 
@@ -36,12 +37,13 @@ public:
 
 class Teacher : public Person 
 {
-	protected: 
+protected: 
 		// Дополнительные защищенные члены специфичные для учителя 
 		string subject;
 
 public: 
 	Teacher(string n, int a, string sub) : Person(n, a), subject(sub) {}
+
 	void display() 
 	{
 		Person::display(); // Вызов метода display базового класса cout << "Teaches: " << subject << endl; 
