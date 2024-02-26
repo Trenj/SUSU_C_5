@@ -24,6 +24,8 @@ public:
 
     void makeSound() override 
     {
+        cout << "-----------------------------" << endl;
+        cout << name << " " << age << endl;
         cout << "Dog barks" << endl;
     }
 };
@@ -35,6 +37,8 @@ public:
 
     void makeSound() override 
     {
+        cout << "-----------------------------" << endl;
+        cout << name << " " << age << endl;
         cout << "Cat meows" << endl;
     }
 };
@@ -47,8 +51,8 @@ int main()
     Dog dog1("Star", 5);
     dog1.makeSound(); // Вывод: Dog barks
 
-    Cat Cat1("Star", 5);
-    Cat1.makeSound(); // Вывод: Dog barks
+    Cat Cat1("Markus", 4);
+    Cat1.makeSound(); // Вывод: Cat meows
 
     return 0;
 }
